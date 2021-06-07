@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title> Page Title </title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+  <body>
+    <div class="container">
+
+      <div class="nav-wrapper">
+
+        <div class="left-side">
+
+          <div class="nav-link-wrapper active-nav-link">
+            <a href="index.html"> Home </a>
+          </div>
+
+          <div class="nav-link-wrapper">
+            <a href="about.html"> About </a>
+          </div>
+
+        </div>
+
+        <div class="right-side">
+          <div class="brand">
+            <div><b>DOUGLAS L. SPARDEL </b></div>
+          </div>
+        </div>
+      </div>
+      <div class="content-wrapper">
+        <div class="portfolio-items-wrapper">
+          <a href="./resume.html">
+            <div class="portfolio-item-wrapper">
+              <div class="portfolio-img-background" style="background-image:url(scott-graham-OQMZwNd3ThU-unsplash.jpg)"></div>
+              <div class="img-text-wrapper">
+                <div class="logo-wrapper">
+                  <img src="check.png">
+                </div>
+                <div class="subtitle">
+                  <p>Resume and Credentials</p>
+                  <p> - click to see</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="./economicportfolio.html">
+          <div class="portfolio-item-wrapper">
+                  <div class="portfolio-img-background" style="background-image:url(m-b-m-ZzOa5G8hSPI-unsplash.jpg)"></div>
+
+                  <div class="img-text-wrapper">
+
+                    <div class="logo-wrapper" >
+                      <img src="chartlogo.png">
+                    </div>
+                    <div class="subtitle">
+                      Economic Analyses
+                    </div>
+                    <!-- <script src="script.js"></script> -->
+                  </div>
+
+            </div>
+          </a>
+          <a href="./neuroscience.html">
+          <div class="portfolio-item-wrapper">
+            <div class="portfolio-img-background" style="background-image:url(john-jackson-f86HPcJrLsA-unsplash.jpg)"></div>
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="brainlogo.png">
+              </div>
+              <div class="subtitle">
+                Neuroscience Studies
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="./engineer.html">
+          <div class="portfolio-item-wrapper">
+            <div class="portfolio-img-background" style="background-image:url(mario-mesaglio-zBjdLbgwuXk-unsplash.jpg)"></div>
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="engineer.png">
+              </div>
+              <div class="subtitle">
+                Production Engineering
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="./travel.html">
+          <div class="portfolio-item-wrapper">
+            <div class="portfolio-img-background" style="background-image:url(agustin-diaz-gargiulo-7F65HDP0-E0-unsplash.jpg)"></div>
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="planelogo.png">
+              </div>
+              <div class="subtitle">
+                Travels
+              </div>
+            </div>
+          </div>
+        </a>
+          <a href="./extracurriculars.html">
+          <div class="portfolio-item-wrapper">
+            <div class="portfolio-img-background" style="background-image:url(tudor-baciu-vc3iVL_znJ8-unsplash.jpg)"></div>
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="run.png">
+              </div>
+              <div class="subtitle">
+                Extracurriculars
+              </div>
+            </div>
+          </div>
+        </a>
+
+      </div>
+
+    </div>
+  </body>
+<script>
+
+  const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+  portfolioItems.forEach(portfolioItem => {
+    portfolioItem.addEventListener('mouseover', () =>{
+      portfolioItem.childNodes[1].classList.add('img-darken');
+    })
+    portfolioItem.addEventListener('mouseout', () =>{
+      portfolioItem.childNodes[1].classList.remove('img-darken');
+    })
+  })
+</script>
+<!-- <script>
+
+  const backItems = document.querySelectorAll('.img-text-wrapper')
+
+  backItems.forEach(backItem => {
+    backItem.addEventListener('onclick', function () {
+      backItems.forEach(backitem => backItem.classList.remove('active'))
+      this.classList.add('active');
+    })
+
+  })
+</script> -->
+<!-- <script>
+
+  const econItems = img.querySelectorAll('')
+
+  econItems.forEach(econItems => {
+    econItems.addEventListener('click', () =>{
+      econItems.classList.add('img-darken');
+    })
+  econItems.addEventListener('click', () =>{
+    econItems.classList.remove('img-darken');
+  })
+  })
+</script> -->
+</html>
